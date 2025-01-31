@@ -138,7 +138,7 @@ body{
   
     .hamburger {
       display: flex;
-      margin-right: 1rem;
+      margin-right: 2rem;
     }
   }
   @media (max-width: 400px){
