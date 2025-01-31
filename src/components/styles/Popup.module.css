@@ -1,0 +1,36 @@
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-50%) translateY(100%);
+    }
+    to {
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+  
+  .closeButton {
+    background: none;
+    border: none;
+    color: #00aced;
+    cursor: pointer;
+    margin-left: 15px;
+    font-weight: bold;
+  }
+  
+  .closeButton:hover {
+    text-decoration: underline;
+  }
+  

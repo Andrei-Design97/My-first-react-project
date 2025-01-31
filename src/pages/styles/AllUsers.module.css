@@ -1,0 +1,193 @@
+.container {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    background: url("../../assets/og.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #2c3e50; 
+    margin-top: 4rem;
+}
+
+.h1Container {
+    color: #f0e5d8; 
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: rgba(240, 240, 240, 0.9);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.filterGroup {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5rem; 
+}
+
+.filterInput {
+    padding: 0.5rem;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    width: 150px; 
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.filterLabel {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filterLabel span {
+    margin-bottom: 0.3rem;
+}
+.userTableContainer {
+    overflow: auto; 
+    -webkit-overflow-scrolling: touch;
+    flex-grow: 1; 
+    margin-bottom: 2rem; 
+    padding-bottom: 2rem; 
+}
+
+.userTable {
+    width: 100%;
+    min-width: 800px; 
+    border-collapse: collapse;
+    color: rgb(8, 0, 0);
+    background-color: #fffcfcf6;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.userTable th,
+.userTable td {
+    padding: 1rem;
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+
+.userTable th {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.userTable td {
+    font-size: 1rem;
+}
+
+.editButton,
+.deleteButton {
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    margin: 0.3rem;
+}
+
+.editButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.editButton:hover {
+    background-color: #218838;
+}
+
+.deleteButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.deleteButton:hover {
+    background-color: #c82333;
+}
+
+.noUsers {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #555;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.5rem;
+    flex: 1;
+    color: #555;
+    padding: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.actionButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.editFlatsButton {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.editFlatsButton:hover {
+    background-color: #e0a800;
+}
+
+@media (max-width: 900px) {
+    .userTableContainer {
+        padding-bottom: 0.2rem; 
+    }
+
+    .userTable th,
+    .userTable td {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}
+
+@media(max-width: 430px){
+    .filterInput{
+        width: 5rem;
+    }
+}
+
+

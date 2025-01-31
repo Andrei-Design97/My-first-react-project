@@ -1,0 +1,141 @@
+.container {
+  padding: 2rem;
+  background: url("../../assets/og.jpg") no-repeat center center/cover;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.messageTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background-color: white;
+}
+
+.messageTable th,
+.messageTable td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.messageTable th {
+  background-color: #007bff;
+  color: white;
+}
+
+.messageTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+      padding: 1rem;
+      border-radius: 5px;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  .messageTable th,
+  .messageTable td {
+      padding: 0.8rem;
+      font-size: 0.9rem;
+  }
+
+  .messageTable th {
+      font-size: 1rem;
+  }
+
+  .deleteButton {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+  }
+
+  .messageTable th,
+  .messageTable td {
+      padding: 0.5rem;
+      font-size: 0.8rem;
+  }
+
+  .deleteButton {
+      padding: 0.3rem 0.6rem;
+      font-size: 0.8rem;
+  }
+}
+@media (max-width: 440px) {
+  .container {
+      padding: 0.5rem; 
+      border-radius: 5px;
+  }
+
+  h1 {
+      font-size: 1rem; 
+      margin-bottom: 0.5rem;
+  }
+
+  .messageTable {
+      font-size: 0.75rem; 
+  }
+
+
+  .messageTable th {
+      font-size: 0.8rem; 
+  }
+
+  .deleteButton {
+      padding: 0.2rem 0.5rem; 
+      font-size: 0.7rem;
+  }
+
+  .loading {
+      font-size: 1rem; 
+  }
+
+  /* Tabel scrollabil pe orizontală */
+  .messageTable {
+      display: block; 
+      overflow-x: auto; 
+      white-space: nowrap; 
+  }
+}
+

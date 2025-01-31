@@ -1,0 +1,37 @@
+.container {
+    padding: 2rem;
+    background: url("../../assets/og.jpg") no-repeat center center/cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    min-height: 100vh;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    background-color: rgba(240, 248, 255, 0.603);
+}
+
+.detailsCard {
+    background-color: rgba(250, 250, 250, 0.9);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imageGallery {
+    margin-top: 1rem;
+}
+
+.imageGrid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.flatImage {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+    max-height: 200px;
+}

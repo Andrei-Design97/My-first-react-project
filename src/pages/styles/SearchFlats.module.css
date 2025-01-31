@@ -1,0 +1,180 @@
+.container {
+    padding: 2rem;
+    background: url("../../assets/450-washington-st-new-york-ny-building-photo.jpg") center center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    color: wheat;
+    background-color: #0000005d;
+}
+
+.filtersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgba(34, 48, 57, 0.651);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.filterGroup {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filterInput,
+.filterSelect {
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid #cccccca8;
+    background-color: rgba(34, 48, 57, 0.651);
+    width: 200px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filterButton,
+.resetButton {
+    padding: 0.7rem 1.5rem;
+    background-color: #0400ff59;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.resetButton {
+    background-color: #d6111193;
+}
+
+.filterButton:hover {
+    background-color: #0056b3;
+}
+
+.resetButton:hover {
+    background-color: #555;
+}
+
+.flatGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.flatCard {
+    background-color: rgba(34, 48, 57, 0.651);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.flatDescription{
+    color: wheat;
+}
+
+.flatCard:hover {
+    transform: scale(1.02);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heartIcon {
+    font-size: 1.8rem;
+    color: lightgray;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.heartIcon:hover,
+.filledHeart {
+    color: red;
+}
+
+.flatCard h2 {
+    margin-top: 0;
+}
+
+.flatImage {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.messageButton,
+.detailsButton {
+    background-color: #007bff79;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.messageButton:hover {
+    background-color: #0056b3;
+}
+
+.detailsButton {
+    background-color: #28a7468e;
+}
+
+.detailsButton:hover {
+    background-color: #218838;
+}
+
+.messageButton:active,
+.detailsButton:active {
+    transform: scale(0.98);
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+    padding: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.noResults {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #555;
+}
+
+.favorite {
+    color: red;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

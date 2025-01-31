@@ -1,0 +1,143 @@
+.chatButton{
+    border-radius: 20px;
+    width: 5rem;
+    height: 2rem;
+}
+
+.chatWrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1002;
+  }
+  
+  .chatWindow {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chatHeader {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .chatBody {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  
+  .botMessage {
+    text-align: left;
+    margin: 5px 0;
+    color: black;
+    background: #f1f1f1;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+  
+  .options {
+    margin-top: 10px;
+  }
+  
+  .optionButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .optionButton:hover {
+    background: #0056b3;
+  }
+
+  .closeChat {
+    background-color: #ff4d4d; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    width: 4rem;
+    height: 2rem;
+    font-size: 0.9rem; 
+    font-weight: bold; 
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .closeChat:hover {
+    background-color: #e60000; 
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .closeChat:active {
+    background-color: #cc0000; 
+    transform: scale(0.95); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .closeChat:focus {
+    outline: none; 
+    box-shadow: 0 0 5px #ff4d4d; 
+  }
+  .feedbackOptions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .feedbackButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedbackButton:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 590px){
+    .chatButton{
+      width: 4rem;
+      height: 1.5rem;
+    }
+
+    .chatWrapper {
+      bottom: 5px;
+      right: 20px;
+    }
+  }
+
+  @media (max-width: 323px){
+    .chatButton{
+      width: 4rem;
+      height: 1.5rem;
+    }
+
+    .chatWrapper {
+      bottom: 30px;
+      right: 20px;
+    }
+  }
+  
+  
+  

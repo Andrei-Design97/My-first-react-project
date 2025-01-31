@@ -1,0 +1,112 @@
+.container {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), 
+                url("../../assets/og.jpg") no-repeat center center/cover;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    color: #f3f3f3;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.flatDetails {
+    margin-top: 1rem; 
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 2.5rem;
+    width: 60%;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flatDetails:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-align: left; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.sendButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sendButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.sendButton:active {
+    transform: scale(0.95);
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f3f3f3;
+    animation: pulse 1s infinite ease-in-out;
+}
+
+.paragraph{
+    color: black;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 768px) {
+    .flatDetails {
+        width: 90%; 
+        padding: 2rem;
+    }
+    .textarea {
+        font-size: 0.9rem;
+    }
+    .sendButton {
+        padding: 0.5rem 1.2rem;
+    }
+}
